@@ -1,9 +1,12 @@
-# Spotify Listen Together (Server)
+# Spotify Listen Together (Server) docker version
 To understand what this is, visit [Spotify Listen Together](https://github.com/FlafyDev/spotify-listen-together).
 
-### Creating a server
-The server must be hosted somewhere.
+### Environment variables 
+- `PORT` - port of the server (default 3000)
+- `HOST_PASSWORD` - The password a listener must have to get host access.
+- `MAX_DELAY` - Maximum time in milliseconds the server will be willing to wait for all the listeners after an action.
 
-To host with Heroku:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+### Start the server
+```
+docker run sejkom/spotify-listen-together
+```
