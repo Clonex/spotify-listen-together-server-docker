@@ -8,5 +8,5 @@ To understand what this is, visit [Spotify Listen Together](https://github.com/F
 
 ### Start the server
 ```
-docker run sejkom/spotify-listen-together
+docker run -p 3000:3000 sejkom/spotify-listen-together
 ```
