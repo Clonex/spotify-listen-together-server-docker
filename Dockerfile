@@ -10,5 +10,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY . /app
 RUN yarn
+RUN yarn build
 
-CMD ["yarn","start-dev"]
+CMD ["yarn","start"]
